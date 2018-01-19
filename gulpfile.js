@@ -17,17 +17,26 @@ const DIST_DIR = './dist';
 //less=>css
 gulp.task('css', cssTask);
 
+//
 function cssTask(){
   return gulp.src(`${SOURCE_DIR}/css/main.less`)
   .pipe(less({
-    paths:
+    paths:[
+      '.',
+      './node_modules/normalize.css.less',
+      './src/css'
+    ]
   }).on('error', (err) => {
     var displayErr = gutil.colors.red(err);
     gutil.log(displayErr);
     gutil.beep;
     this.emit(end);
   }))
-}
+  .pipe(postcss([autoprefixer({browsers: ['last 2 version', 'Safari 8']})]))
+  .pipe(gulp.dest(`${DIST_DIR}/css/`))
+  .pipe(browserSync.stream());
+  done();
+};
 
 //default task
 gulp.task('default', defaultTask);
@@ -35,4 +44,8 @@ gulp.task('default', defaultTask);
 function defaultTask(done) {
   console.log('default task done');
   done();
-}
+};
+
+/*
+1. 
+*/
