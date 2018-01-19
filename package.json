@@ -19,7 +19,7 @@
     "node",
     "js"
   ],
-  "author": "Alessandro Aprile",
+  "author": "Alessandro Aprile <aprile.alessandro@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/netalex/npm-web-cv/issues"
