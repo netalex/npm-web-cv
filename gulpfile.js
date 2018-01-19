@@ -1,6 +1,7 @@
 const fs = require('fs');
 const gulp = require('gulp');
 const less = require('gulp-less');
+const path = require('path');
 const gutil = require('gulp-util');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
@@ -18,7 +19,9 @@ gulp.task('css', cssTask);
 
 function cssTask(){
   return gulp.src(`${SOURCE_DIR}/css/main.less`)
-  .pipe(less().on('error', (err) => {
+  .pipe(less({
+    paths:
+  }).on('error', (err) => {
     var displayErr = gutil.colors.red(err);
     gutil.log(displayErr);
     gutil.beep;
