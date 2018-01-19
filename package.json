@@ -24,5 +24,24 @@
   "bugs": {
     "url": "https://github.com/netalex/npm-web-cv/issues"
   },
-  "homepage": "https://github.com/netalex/npm-web-cv#readme"
+  "homepage": "https://github.com/netalex/npm-web-cv#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.5",
+    "browserify": "^15.2.0",
+    "fs": "0.0.1-security",
+    "gulp-less": "^3.4.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "graceful": "^1.0.1",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.0",
+    "minimatch": "^3.0.4"
+  }
 }
