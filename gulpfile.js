@@ -16,7 +16,7 @@ const DIST_DIR = './dist';
 //less=>css
 gulp.task('css', cssTask);
 
-function(){
+function cssTask(){
   return gulp.src(`${SOURCE_DIR}/css/main.less`)
   .pipe(less().on('error', (err) => {
     var displayErr = gutil.colors.red(err);
