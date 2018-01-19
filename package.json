@@ -1,0 +1,28 @@
+{
+  "name": "npm-web-cv",
+  "version": "1.0.0",
+  "description": "a web page getting data from a markdown resume file via pandoc and wkhtmltopdf and styling via less. Should be able to publish on gh-pages every format from one source",
+  "main": "src/resume.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netalex/npm-web-cv.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "pdf",
+    "resume",
+    "cv",
+    "node",
+    "js"
+  ],
+  "author": "Alessandro Aprile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netalex/npm-web-cv/issues"
+  },
+  "homepage": "https://github.com/netalex/npm-web-cv#readme"
+}
